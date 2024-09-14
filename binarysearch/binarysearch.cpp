@@ -3,7 +3,7 @@ using namespace std;
 int bsearch(int a[],int size,int key){
     int start = 0;
     int end = size-1;
-    int mid = (start+end)/2;
+    int mid = start + (end-start)/2;
     while(start<=end){
         if(a[mid] == key){
             return mid;
@@ -14,7 +14,7 @@ int bsearch(int a[],int size,int key){
         else {
             start = mid + 1;
         }
-        mid = (start + end)/2;
+        mid = start + (end-start)/2;
     }
     return -1;
 }
