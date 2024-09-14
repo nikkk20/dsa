@@ -21,7 +21,7 @@ int bsearch(int a[],int size,int key){
 int main()
 {
     int a[6] = {1,2,3,4,5,6};
-    int key = 6;
+    int key = 1;
     cout<<bsearch(a,6,key);
     return 0;
 }
