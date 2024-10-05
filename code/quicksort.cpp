@@ -38,7 +38,7 @@ void quick(vector<int> &arr,int s , int e){
     quick(arr,p+1,e);
 }
 int main(){
-    vector<int> arr = {9,8,7,5,6,3,2,1,4,5,6,8,5,6,9,5,5};
+    vector<int> arr = {6,6,-6,-2,-4,-6,2,-6};
     quick(arr,0,arr.size()-1);
     for(int i = 0;i<arr.size();i++){
         cout<<arr[i]<<" ";
